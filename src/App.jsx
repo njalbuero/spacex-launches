@@ -1,9 +1,6 @@
-// App.js
 import React, { useState } from "react";
 import LaunchesList from "./components/Launches/launches-list";
 import StatusFilterButton from "./components/Launches/status-filter-button";
-import { ToastContainer } from "react-toastify"; // Import ToastContainer
-
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -39,7 +36,6 @@ function App() {
       <div className="launch">
         <LaunchesList searchQuery={searchQuery} statusFilter={statusFilter} />
       </div>
-      <ToastContainer />
     </div>
   );
 }
